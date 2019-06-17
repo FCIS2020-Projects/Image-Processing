@@ -108,6 +108,11 @@ namespace CsharpGUI
 
         private void equalize_button_Click(object sender, EventArgs e)
         {
+            if (BuffersFirstImage == null)
+            {
+                MessageBox.Show("First image is not available");
+                return;
+            }
             //Get first image buffers
             var buffersOfFirstImage = BuffersFirstImage;
 
@@ -149,6 +154,11 @@ namespace CsharpGUI
 
         private void sobel_button_Click(object sender, EventArgs e)
         {
+            if (BuffersFirstImage == null)
+            {
+                MessageBox.Show("First image is not available");
+                return;
+            }
             //Get first image buffers
             var buffersOfFirstImage = BuffersFirstImage;
 
@@ -252,6 +262,16 @@ namespace CsharpGUI
 
         private void addImage_btn_Click(object sender, EventArgs e)
         {
+            if (BuffersFirstImage == null)
+            {
+                MessageBox.Show("First image is not available");
+                return;
+            }
+            if (BuffersSecondImage == null)
+            {
+                MessageBox.Show("image 2 is not available");
+                return;
+            }
             var buffersOfFirstImage = BuffersFirstImage;
             var buffersOfSecondImage = BuffersSecondImage;
 
@@ -283,6 +303,16 @@ namespace CsharpGUI
 
         private void subImage_btn_Click(object sender, EventArgs e)
         {
+            if (BuffersFirstImage == null)
+            {
+                MessageBox.Show("First image is not available");
+                return;
+            }
+            if(BuffersSecondImage == null)
+            {
+                MessageBox.Show("Second image is not available");
+                return;
+            }
             var buffersOfFirstImage = BuffersFirstImage;
             var buffersOfSecondImage = BuffersSecondImage;
 
@@ -314,6 +344,11 @@ namespace CsharpGUI
 
         private void button3_Click(object sender, EventArgs e)
         {
+            if (BuffersFirstImage == null)
+            {
+                MessageBox.Show("First image is not available");
+                return;
+            }
             var buffersOfFirstImage = BuffersFirstImage;
 
             int width = buffersOfFirstImage.Width;
@@ -353,6 +388,11 @@ namespace CsharpGUI
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (BuffersFirstImage == null)
+            {
+                MessageBox.Show("First image is not available");
+                return;
+            }
             var buffersOfFirstImage = BuffersFirstImage;
 
             int width = buffersOfFirstImage.Width;
@@ -391,6 +431,11 @@ namespace CsharpGUI
 
         private void button2_Click(object sender, EventArgs e)
         {
+            if (BuffersFirstImage == null)
+            {
+                MessageBox.Show("First image is not available");
+                return;
+            }
             var buffersOfFirstImage = BuffersFirstImage;
 
             int width = buffersOfFirstImage.Width;

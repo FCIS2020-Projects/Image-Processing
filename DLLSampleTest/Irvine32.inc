@@ -11,8 +11,6 @@ INCLUDE VirtualKeys.inc
 ;----------------------------------------
 ; Procedure Prototypes
 ;----------------------------------------
-Panic PROTO			;Print panic message
-RETCALLER PROTO		; RETURNS TO THE CALLER OF THE METHOD
 CloseFile PROTO		; close a file handle
 Clrscr PROTO		; clear the screen
 CreateOutputFile PROTO		; create file for writing
@@ -38,7 +36,6 @@ RandomRange PROTO		; generate random integer in specified range
 Random32 PROTO		; generate 32-bit random integer
 ReadInt PROTO		; read signed decimal integer from console
 ReadChar PROTO		; reach single character from console
-Read_Char PROTO		; reach single character from console
 ReadDec PROTO		; read unsigned decimal integer from console
 ReadFloat PROTO		; read floating-point value from keyboard
 ReadFromFile PROTO   		; read buffer from input file
