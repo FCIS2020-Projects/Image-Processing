@@ -269,7 +269,7 @@ namespace CsharpGUI
             }
             if (BuffersSecondImage == null)
             {
-                MessageBox.Show("image 2 is not available");
+                MessageBox.Show("Second image is not available");
                 return;
             }
             var buffersOfFirstImage = BuffersFirstImage;
